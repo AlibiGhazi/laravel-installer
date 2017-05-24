@@ -1,5 +1,6 @@
 {
   "name": "AlibiGhazi/Installer",
+  "type": "library",
   "description": "laravel app installer",
   "license": "MIT",
   "authors": [
@@ -11,5 +12,13 @@
   "minimum-stability": "dev",
   "require": {
     "brotzka/laravel-dotenv-editor": "^2.0"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "AlibiGhazi\\Installer\\": "src"
+    }
   }
+
+
 }
