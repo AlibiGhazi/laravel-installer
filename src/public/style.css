@@ -1,0 +1,336 @@
+/* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+body {
+    background: #F3F1EE;
+}
+
+.wrapper {
+    margin: 30px auto;
+    background: #fff;
+    border: 1px solid #dad0ca;
+    box-shadow:5px 5px 0px 1px rgba(0,0,0,0.05);
+
+}
+@media (min-width: 48em) {
+    .wrapper {
+        max-width: 1500px;
+    }
+}
+
+.stepper {
+    padding: 10px;
+    font-size: 13px;
+}
+@media (min-width: 48em) {
+    .stepper {
+        padding: 20px;
+    }
+}
+.stepper__list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+@media (min-width: 48em) {
+    .stepper__list {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.stepper__list__item {
+    padding: 3px 5px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+@media (min-width: 48em) {
+    .stepper__list__item {
+        padding: 10px;
+        flex-direction: column;
+        flex: 1;
+    }
+}
+.stepper__list__item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
+@media (min-width: 48em) {
+    .stepper__list__item:after {
+        width: calc(100% - 100px);
+        top: 28%;
+        left: calc(50% + 50px);
+        border-top: 2px dotted #E2DFDA;
+    }
+}
+.stepper__list__item--done {
+    color: #178A00;
+    transition: all .1s;
+}
+@media (min-width: 48em) {
+    .stepper__list__item--done:after {
+        border-top-style: solid;
+        border-top-width: 1px;
+    }
+}
+.stepper__list__item--done:hover, .stepper__list__item--done:focus {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.stepper__list__item--current {
+    color: #006DFF;
+}
+.stepper__list__item--current:last-of-type:after, .stepper__list__item--current:only-of-type:after {
+    height: 30%;
+}
+.stepper__list__item:last-of-type:after {
+    display: none;
+}
+.stepper__list__item--pending {
+    color: #807370;
+}
+.stepper__list__item--pending:after {
+    height: 30%;
+}
+.stepper__list__title {
+    margin: 1px 0 0;
+}
+@media (min-width: 48em) {
+    .stepper__list__title {
+        margin: 0;
+    }
+}
+.stepper__list__icon {
+    margin: 0 10px 0 0;
+    height: 2em;
+    width: 2em;
+}
+@media (min-width: 48em) {
+    .stepper__list__icon {
+        margin: 0 0 15px;
+    }
+}
+.stepper__list__icon path {
+    fill: currentColor;
+}
+.stepper__list__icon ellipse,
+.stepper__list__icon circle {
+    stroke: currentColor;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Button classes */
+.btn {
+    border-radius: 0;
+    position: relative;
+}
+.btn.btn-no-border {
+    border: 0px !important;
+}
+/* Button colors */
+
+
+.btn.btn-red {
+    color: #ffffff;
+    background: #ed5441;
+    border: 1px solid #e52d16;
+}
+.btn.btn-red:hover,
+.btn.btn-red:focus,
+.btn.btn-red.active,
+.btn.btn-red:active {
+    color: #ffffff;
+    background: #e52d16;
+}
+.btn.btn-green {
+    color: #ffffff;
+    background: #51d466;
+    border: 1px solid #30c247;
+}
+.btn.btn-green:hover,
+.btn.btn-green:focus,
+.btn.btn-green.active,
+.btn.btn-green:active {
+    background: #30c247;
+    color: #ffffff;
+}
+.btn.btn-lblue {
+    color: #ffffff;
+    background: #32c8de;
+    border: 1px solid #1faabe;
+}
+.btn.btn-lblue:hover,
+.btn.btn-lblue:focus,
+.btn.btn-lblue.active,
+.btn.btn-lblue:active {
+    background: #1faabe;
+    color: #ffffff;
+}
+.btn.btn-blue {
+    color: #ffffff;
+    background: #609cec;
+    border: 1px solid #3280e7;
+}
+.btn.btn-blue:hover,
+.btn.btn-blue:focus,
+.btn.btn-blue.active,
+.btn.btn-blue:active {
+    background: #3280e7;
+    color: #ffffff;
+}
+
+
+
+/* Ui X */
+.ui-15{
+    padding:0px 10px;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:4px;
+    max-width:100%;
+    margin:30px auto;
+
+}
+/* Ui Content */
+
+@media (max-width:767px){
+    .ui-15 .ui-content{
+        max-width:400px;
+    }
+}
+.ui-15 .ui-content .ui-padd{
+    padding:0px;
+}
+/* Ui social */
+.ui-15 .ui-content .ui-social{
+    padding:25px 30px;
+    border-left:1px solid #eee;
+    color:#999;
+}
+@media (max-width:767px){
+    .ui-15 .ui-content .ui-social{
+        border:0px;
+        border-top:1px solid #eee;
+    }
+}
+/* Heading */
+.ui-15  h2{
+    font-size:14px;
+    text-transform:uppercase;
+}
+.ui-15 .ui-social ul li{
+    margin:15px 0px;
+}
+/* Button */
+.ui-15 .ui-social ul li a{
+    width:100%;
+    display:block;
+    color:#fff;
+    font-size:14px;
+    border-radius:3px;
+    padding:5px 10px;
+}
+/* Icon*/
+.ui-15 .ui-social ul li > a > i{
+    width:25px;
+    text-align:center;
+}
+/* UI form */
+.ui-15 .ui-content .ui-form{
+    padding:25px 30px;
+}
+/* UI Input */
+.ui-15 .ui-form .ui-input{
+    position: relative;
+    width: 100%;
+    margin:15px 0px;
+}
+.ui-15 .ui-form .form-control{
+    height:40px;
+}
+/* UI Icon */
+.ui-15 .ui-form .ui-icon{
+    right:4px;
+    top: 0;
+    font-size:14px;
+    width: 30px;
+    color: #ddd;
+    line-height:40px;
+    position: absolute;
+    text-align: center;
+}
+
+
+.intro {
+    margin: 20px;
+}
+
+
+
+button, input, optgroup, select, textarea {
+    font-style: normal;
+}
+
+.form-control , .ui-15 .ui-content{
+    border-radius: 0;
+}
